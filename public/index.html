@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LoL Draft Assistant</title>
+    
+    <!-- Tailwind CSS в head -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <style>
+        body {
+            margin: 0;
+            font-family: system-ui, sans-serif;
+            background: #0f172a;
+            color: white;
+        }
+        
+        /* Fallback стили если Tailwind не загрузится */
+        .fallback-bg { background: #0f172a !important; }
+        .fallback-text { color: white !important; }
+        .fallback-card { background: rgba(255, 255, 255, 0.05) !important; border-radius: 12px !important; padding: 20px !important; }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+</body>
+</html>
